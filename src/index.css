@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+ --portfolio-color: 	#c084fc;
+}
+body{
+ @apply 
+bg-conic-gradient  from-gray-200 to-purple-400 sm:from-blue-400 sm:via-gray-200 sm:to-purple-500
+dark:bg-radial-gradient-to-top dark:from-gray-800 dark:to-gray-950 dark:text-gray-200
+transition-all duration-300 ease-linear
+}
+.bg-div-1{
+ @apply absolute left-12 text-3xl -rotate-90 
+}
+.name{
+ @apply bg-gradient-to-r from-purple-900 to-blue-400 
+ bg-clip-text text-transparent 
+ dark:from-gray-200 dark:to-white
+ font-extrabold text-[40px] mx-10 sm:text-[50px] md:text-[60px]
+}
+.icon{
+ @apply  p-2 md:p-3 bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-100 dark:hover:text-gray-900
+ rounded-md hover:bg-gray-900 hover:text-white hover:rounded-3xl transition-all duration-300 ease-linear
+}
+.portfolio{
+ color:transparent;
+ -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-color: var(--portfolio-color);
+}
+.dark{
+ --portfolio-color: 	#374151;
+}
+
+.label{
+ @apply absolute capitalize opacity-0 left-16 scale-0 text-[12px] w-16 py-1 text-center 
+ bg-gray-900 text-white rounded-md ring-1 ring-gray-500
+ ring-offset-1 ring-offset-gray-100
+ dark:bg-gray-100 dark:text-gray-900 dark:ring-gray-200 
+ dark:ring-offset-gray-800 
+}
+
+.contact-heading{
+ @apply text-[18px] font-semibold 
+}
+.input-box{
+ @apply rounded-sm px-2 py-1 outline-none hover:shadow-md w-52 sm:w-64
+ lg:w-96 dark:shadow-gray-800 bg-white dark:bg-gray-200 text-black shadow-purple-800
+} 
