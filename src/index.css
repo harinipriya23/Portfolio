@@ -6,6 +6,7 @@
 
 :root{
  --portfolio-color: 	#c084fc;
+ scroll-behavior: smooth;
 }
 body{
  @apply 
@@ -19,7 +20,7 @@ transition-all duration-300 ease-linear
 .name{
  @apply bg-gradient-to-r from-purple-900 to-blue-400 
  bg-clip-text text-transparent 
- dark:from-gray-200 dark:to-white
+ dark:from-white dark:to-gray-600 
  font-extrabold text-[40px] mx-10 sm:text-[50px] md:text-[60px]
 }
 .icon{
@@ -28,7 +29,7 @@ transition-all duration-300 ease-linear
 }
 .portfolio{
  color:transparent;
- -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-width: 1px;
  -webkit-text-stroke-color: var(--portfolio-color);
 }
 .dark{

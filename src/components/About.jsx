@@ -3,7 +3,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-center p-10">
+    <div
+      id="about"
+      className="flex h-screen flex-col items-center justify-center p-10"
+    >
       <p className="text-3xl font-bold text-purple-900 dark:text-gray-200">
         ABOUT ME
       </p>
@@ -14,10 +17,15 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/harini-priya-arunjunaivel2030/"
               target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
             >
               <FaLinkedin size={25} />
             </a>
-            <a href="https://github.com/harinipriya2030/" target="_blank">
+            <a
+              href="https://github.com/harinipriya2030/"
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <FaGithub size={25} />
             </a>
           </div>
@@ -45,10 +53,15 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/harini-priya-arunjunaivel2030/"
               target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
             >
               <FaLinkedin size={25} />
             </a>
-            <a href="https://github.com/harinipriya2030/" target="_blank">
+            <a
+              href="https://github.com/harinipriya2030/"
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <FaGithub size={25} />
             </a>
           </div>

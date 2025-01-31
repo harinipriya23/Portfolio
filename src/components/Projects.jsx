@@ -25,7 +25,7 @@ const Projects = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="flex h-screen flex-col items-center p-5">
+    <div id="projects" className="flex h-screen flex-col items-center p-5">
       <p className="text-3xl font-bold text-purple-900 dark:text-gray-200">
         PROJECTS
       </p>
@@ -35,7 +35,7 @@ const Projects = () => {
             key={id}
             onMouseEnter={() => setHovered(id)}
             onMouseLeave={() => setHovered(null)}
-            className={`group relative h-44 w-64 overflow-hidden rounded-lg border-2 text-white shadow-sm shadow-gray-200 transition-all duration-500 hover:scale-110 dark:border-blue-400 sm:w-72 md:w-80 lg:h-52 lg:${
+            className={`group relative h-44 w-64 overflow-hidden rounded-lg border-2 text-white shadow-sm shadow-gray-200 transition-all duration-500 hover:scale-110 dark:border-gray-400 sm:w-72 md:w-80 lg:h-52 lg:${
               hovered === id ? "w-4/5" : "w-1/5"
             }`}
           >
@@ -50,7 +50,7 @@ const Projects = () => {
               <p className="text-xl font-bold">{name}</p>
               <a
                 target="_blank"
-                className="duration-400 rounded-md bg-gradient-to-l from-blue-400 to-gray-900 px-4 py-1 text-[14px] font-semibold uppercase tracking-wide shadow-lg transition-transform hover:scale-110"
+                className="duration-400 rounded-md bg-gradient-to-l from-gray-400 to-gray-900 px-4 py-1 text-[14px] font-semibold uppercase tracking-wide shadow-lg transition-transform hover:scale-110"
                 href={code}
               >
                 View code

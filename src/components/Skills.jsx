@@ -63,7 +63,7 @@ const Skills = () => {
     }, // Light to Dark Gray
   ];
   return (
-    <div className="flex h-screen flex-col items-center p-10">
+    <div id="skills" className="flex h-screen flex-col items-center p-10">
       <p className="text-3xl font-bold text-purple-900 dark:text-gray-200">
         TECHNICAL SKILLS
       </p>

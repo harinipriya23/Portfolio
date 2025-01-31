@@ -7,31 +7,32 @@ import { IoPersonSharp } from "react-icons/io5";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { PiCodeFill } from "react-icons/pi";
 import { RiMessage2Fill } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 export const navLinks = [
   {
     label: "home",
-    to: "",
+    to: "#",
     icon: <ImHome />,
   },
   {
     label: "about",
-    to: "about",
+    to: "#about",
     icon: <IoPersonSharp />,
   },
   {
     label: "skills",
-    to: "skills",
+    to: "#skills",
     icon: <PiCodeFill />,
   },
   {
     label: "projects",
-    to: "projects",
+    to: "#projects",
     icon: <AiFillProject />,
   },
   {
     label: "contact",
-    to: "contact",
+    to: "#contact",
     icon: <RiMessage2Fill />,
   },
 ];
@@ -68,7 +69,7 @@ const Navbar = () => {
             {icon}
           </a>
           <span className="label group-hover:scale-75 group-hover:opacity-100">
-            {label}
+            <Link to={to}>{label}</Link>
           </span>
         </li>
       ))}
