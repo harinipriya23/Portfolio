@@ -14,7 +14,7 @@ const About = () => {
         <div className="my-5 h-44 w-36 p-1 xs:h-52 xs:w-44 sm:mx-10 sm:h-64 sm:w-52 md:ml-20 md:h-1/2 md:w-[250px] lg:h-[400px] lg:w-[350px]">
           <img
             src="hp.png"
-            class="h-full w-full rounded-e-full border-4 border-gray-300 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-500"
+            class="h-full w-full rounded-e-full border-4 border-purple-200 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-400 dark:border-gray-300 dark:hover:shadow-gray-500"
           />
 
           <div className="my-4 flex justify-center gap-5 md:hidden">
