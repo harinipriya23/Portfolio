@@ -74,7 +74,7 @@ const Skills = () => {
             className={`group relative flex h-20 w-20 items-center justify-center rounded-full xs:h-24 xs:w-24 sm:h-36 sm:w-36 md:h-40 md:w-40`}
           >
             <div
-              className={`absolute inset-2 -z-10 shadow-md blur-[10px] ${shadow} ${bgColor} h-16 w-16 animate-slow-spin rounded-full bg-radial-gradient-to-top transition-all duration-1000 xs:h-20 xs:w-20 sm:h-32 sm:w-32 md:h-36 md:w-36`}
+              className={`absolute inset-2 -z-10 shadow-sm blur-[4px] ${shadow} ${bgColor} animate-slow-spin rounded-full bg-radial-gradient-to-top transition-all duration-300 xs:h-20 xs:w-20 sm:h-32 sm:w-32 md:h-36 md:w-36`}
             ></div>
             <div className="flex h-[76px] w-[76px] items-center justify-center rounded-full bg-radial-gradient from-gray-300 to-white transition-all duration-1000 group-hover:scale-110 dark:from-gray-600 dark:to-black sm:h-[120px] sm:w-[120px] md:h-[138px] md:w-[138px]">
               <img
